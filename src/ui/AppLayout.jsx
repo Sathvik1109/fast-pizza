@@ -14,7 +14,7 @@ const AppLayout = () => {
 
       <Header />
 
-      <div className="overflow-scroll">
+      <div className="overflow-y-auto">
         <main className="mx-auto max-w-3xl">
           <Outlet />
         </main>
