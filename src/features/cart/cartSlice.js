@@ -20,7 +20,7 @@ const cartSlice = createSlice({
   reducers: {
     addItem: (state, action) => {
       // Payload = newItem
-      state.cart = state.cart.map((prev) => [...prev, action.payload]);
+      state.cart = [...state.cart, action.payload];
     },
     deleteItem: (state, action) => {
       // Payload = pizzaId
