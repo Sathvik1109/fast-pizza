@@ -21,6 +21,10 @@ const cartSlice = createSlice({
     addItem: (state, action) => {
       // Payload = newItem
       state.cart = [...state.cart, action.payload];
+
+      // if(state.cart.includes(action.payload)){
+
+      // }
     },
     deleteItem: (state, action) => {
       // Payload = pizzaId
@@ -59,3 +63,5 @@ export const getCartQuantity = (state) =>
 
 export const getCartPrice = (state) =>
   state.cart.cart.reduce((sum, item) => sum + item.totalPrice, 0);
+
+export const getCart = (state) => state.cart.cart;
