@@ -4,7 +4,7 @@ import MenuItem from '../menu/MenuItem';
 
 const Menu = () => {
   const menu = useLoaderData();
-  console.log(menu);
+  // console.log(menu);
 
   return (
     <ul className="divide-y divide-stone-200">
@@ -18,7 +18,7 @@ const Menu = () => {
 // eslint-disable-next-line react-refresh/only-export-components
 export const loader = async () => {
   const menu = await getMenu();
-  console.log(menu);
+  // console.log(menu);
   return menu;
 };
 
